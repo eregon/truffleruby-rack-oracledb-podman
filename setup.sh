@@ -10,4 +10,4 @@ if ! podman secret exists oracle_pwd; then
   echo "Welcome1" | podman secret create oracle_pwd -
 fi
 
-podman build -f Dockerfile.rack -t rack-oracledb .
+podman build -t rack-oracledb .
